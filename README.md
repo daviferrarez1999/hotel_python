@@ -1,6 +1,6 @@
 # Sobre o projeto
 
-Nesse projeto, é feita uma aplicação de um banco de dados de um hotel. É baseado em CRUD e possui várias funções de inserção e atualização de registros, além de deleção.
+Nesse projeto, é feita uma aplicação de um banco de dados de um hotel fictício. É baseado em CRUD e possui várias funções de inserção e atualização de registros, além de deleção.
 
 Linguagem utilizada:
 
