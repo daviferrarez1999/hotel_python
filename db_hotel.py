@@ -157,7 +157,7 @@ inserir_hospede_reserva(conexao, cursor, "Joaquim", 1040, 1)
 inserir_hospede_reserva(conexao, cursor, "Joana", 1050, 4)
 
 
-def mais_de_uma_hospedagem(conexao, cursor, idHospede):
+def mais_de_uma_hospedagem(conexao, cursor):
     cursor.execute("""SELECT h.nome, COUNT(hr.idHospede)
                    AS num_reservas FROM hospede h
                    JOIN hospede_reserva hr ON h.idHospede = hr.idHospede
@@ -166,7 +166,7 @@ def mais_de_uma_hospedagem(conexao, cursor, idHospede):
     return resultado
 
 
-resultado = mais_de_uma_hospedagem(conexao, cursor, 1)
+resultado = mais_de_uma_hospedagem(conexao, cursor)
 for mais_de_uma in resultado:
     print(dict(mais_de_uma))
 
